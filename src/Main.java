@@ -7,13 +7,13 @@ public class Main {
 		Random gerador = new Random();
 		
 		int op_usuario;
-		int op_maquina;
-		
-		op_maquina = gerador.nextInt(3) + 1;		
-		System.out.println(op_maquina);
+		int op_maquina;		
 		
 		System.out.println("Digite 1 para pedra, 2 para papel e 3 para tesoura...");
 		op_usuario = scan.nextInt();
+		
+		op_maquina = gerador.nextInt(3) + 1;		
+		System.out.println(op_maquina);
 				
 		if(op_usuario != op_maquina){
 		switch(op_usuario){
