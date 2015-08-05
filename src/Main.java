@@ -16,30 +16,33 @@ public class Main {
 		System.out.println(op_maquina);
 				
 		if(op_usuario != op_maquina){
-		switch(op_usuario){
-			case 1:
-				if(op_usuario + op_maquina == 4){
-					System.out.println("Parabéns, você ganhou!!!");
-					
-				}else{
-					System.out.println("Ahhhh, que pena, você perdeu! :'(");
-				}				
-				break;
-			case 2:
-				if(op_usuario + op_maquina == 3){
-					System.out.println("Parabéns, você ganhou!!!");
-				}else{
-					System.out.println("Ahhhh, que pena, você perdeu! :'(");
+			switch(op_usuario){
+				case 1:
+					if(op_maquina == 3){
+						System.out.println("Parabéns, você ganhou!!!");
+						
+					}else{
+						System.out.println("Ahhhh, que pena, você perdeu! :'(");
+					}				
+					break;
+				case 2:
+					if(op_maquina == 1){
+						System.out.println("Parabéns, você ganhou!!!");
+					}else{
+						System.out.println("Ahhhh, que pena, você perdeu! :'(");
+					}
+					break;
+				case 3:
+					if(op_maquina == 2){
+						System.out.println("Parabéns, você ganhou!!!");
+					}else{
+						System.out.println("Ahhhh, que pena, você perdeu! :'(");
+					}
+					break;
+					default:
+						System.out.println("Opção invalida..");
+						break;
 				}
-				break;
-			case 3:
-				if(op_usuario + op_maquina == 5){
-					System.out.println("Parabéns, você ganhou!!!");
-				}else{
-					System.out.println("Ahhhh, que pena, você perdeu! :'(");
-				}
-				break;
-			}
 		}else{
 			System.out.println("Vixe, rolou um empate!!!!!!!!!!");
 		}
